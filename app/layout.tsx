@@ -7,12 +7,13 @@ import MaxWidthWrapper from "@/components/max-width-wrapper";
 import DotPattern from "@/components/magicui/dot-pattern";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Discord komunita vývojářů | devkoutek.cz",
-  metadataBase: new URL("https://swajp.me"),
+  metadataBase: new URL("https://devkoutek.cz"),
   description:
     "Přidej se k nám mezi vývojáře a sdílej své zkušenosti s ostatními. Najdeš zde pomoc, rady a tipy pro vývojáře.",
 };
@@ -25,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="cs">
       <body className={cn("antialiased", inter.className)}>
+        <Analytics />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
