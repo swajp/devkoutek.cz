@@ -1,3 +1,4 @@
+import { Beam } from "@/components/beam";
 import Cards from "@/components/cards";
 import { Button, buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
@@ -5,8 +6,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="relative flex flex-col z-10">
-      <div className="relative pt-16 md:pt-32 pb-12 md:pb-20 z-10 flex justify-center items-center gap-y-8 flex-col">
+    <div className="relative flex flex-col gap-y-20 z-10">
+      <div className="relative pt-16 md:pt-32 z-10 flex justify-center items-center gap-y-8 flex-col">
         <h1 className="text-5xl md:text-6xl text-center max-w-lg md:max-w-2xl font-semibold">
           Připojte se do discord komunity vývojářů
         </h1>
@@ -55,6 +56,7 @@ export default function Home() {
           className="rounded-2xl border shadow-lg"
         />
       </div>
+      <Beam />
       <Cards />
     </div>
   );
