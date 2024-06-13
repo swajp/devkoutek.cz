@@ -9,7 +9,9 @@ import {
 export default function Cards() {
   return (
     <section id="vice-informaci" className="flex flex-col items-center gap-6">
-      <h1 className="text-5xl font-semibold">Více informací o naší komunitě</h1>
+      <h1 className="text-4xl md:text-5xl font-semibold">
+        Více informací o naší komunitě
+      </h1>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <Card>
           <CardHeader>
