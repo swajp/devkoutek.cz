@@ -13,7 +13,7 @@ export default function Home() {
         </h1>
         <div className="flex flex-col w-full md:w-fit md:flex-row gap-4">
           <Link
-            href={"https://discord.com/invite/FUpBw83r"}
+            href={"https://discord.gg/j3y9hfG4FZ"}
             className={buttonVariants({
               className: "!text-lg w-full md:w-fit",
               size: "lg",
